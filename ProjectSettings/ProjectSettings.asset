@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: f3d212909336bc445a636489e070029a
+  productGUID: e0ceb55323dfd4a46bec05e13ba6a1fc
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: DEMO
+  productName: dddd
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -832,14 +832,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: DEMO
+  metroPackageName: dddd
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: DEMO
+  metroApplicationDescription: dddd
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -908,10 +908,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 5eaaec44-88cc-4c5b-bd0c-527714af6be8
+  cloudProjectId: 073cdb80-f745-41e3-a173-73acb4b592c0
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: DEMO
+  projectName: dddd
   organizationId: vuthao8122003
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
