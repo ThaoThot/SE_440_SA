@@ -1,6 +1,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -28,8 +29,18 @@ public class Player : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Player colleded with" + other.gameObject.name);
-        Debug.Log("Player colleded with force" + other.impulse);
-        Debug.Log("Player colleded with relative veloccity" + other.relativeVelocity);
+        if (other.gameObject.tag.Equals("obstacle"))
+        {
+            Debug.Log("Player colleded with" + other.gameObject.name);
+            Debug.Log("Player colleded with force" + other.impulse);
+            Debug.Log("Player colleded with relative veloccity" + other.relativeVelocity);
+            Debug.Log("Player colleded with contract points" + other.contacts[0].point);
+
+        }    
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        other.gameObject.SetActive(false);
+        Destroy(other.gameObject, 1f);
     }
 }
