@@ -31,12 +31,12 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("obstacle"))
         {
-            Debug.Log("Player colleded with" + other.gameObject.name);
-            Debug.Log("Player colleded with force" + other.impulse);
-            Debug.Log("Player colleded with relative veloccity" + other.relativeVelocity);
-            Debug.Log("Player colleded with contract points" + other.contacts[0].point);
-
+            Return(other.gameObject);
         }    
+    }
+    private void Return(GameObject obj)
+    {
+        ObjectPool.Instance.ReturnOne(obj);
     }
     private void OnTriggerEnter(Collider other)
     {
