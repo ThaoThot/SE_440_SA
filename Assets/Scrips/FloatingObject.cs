@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 [RequireComponent(typeof(Rigidbody))]
 
 public class FloatingObject : MonoBehaviour
@@ -22,7 +23,7 @@ public class FloatingObject : MonoBehaviour
         int pointUnderWaterCount = 0;
         foreach (var point in floatPoints)
         {
-            var diff = transform.position.y - 0;
+            var diff = point.position.y - 0;
             if (diff < 0)
             {
                 _rb.AddForceAtPosition(Vector3.up * waterPower * Mathf.Abs(diff), transform.position, ForceMode.Acceleration);
